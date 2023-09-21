@@ -9,17 +9,18 @@ import ErroPage from './pages/ErroPage';
 import App from './pages/App';
 import CadastroProduto from './pages/CadastroProduto';
 import "./App.css";
+import { CssBaseline } from '@mui/material';
 
 const theme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#1F2261',
-      light: '#5EA7EF',
-      dark: '#0034EF',
+      main: '#7A4C79',
+      light: '#C77BC4',
+      dark: '#3d093b',
     },
     secondary: {
-      main: '#9E4AD4',
+      main: '#b181b1',
     },
     error: {
       main: '#F52600',
@@ -64,6 +65,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ThemeProvider theme={theme}>
+    <CssBaseline />
     <RouterProvider router={router} />
   </ThemeProvider>
 );
